@@ -1,5 +1,3 @@
-import { fromNtoElement } from './utils.js'
-
 // eslint-disable-next-line no-undef
 const worker = new Worker('worker.js', { type: 'module' })
 
@@ -27,8 +25,6 @@ button.addEventListener('click', () => {
   // alert('Chance theme')
   console.log('Hola')
   console.log(+input.value)
-  const t = fromNtoElement(+input.value)
-  console.log(t)
 })
 
 const factorial = async (fact) => {
